@@ -5,3 +5,5 @@
 在portainer的设置里设置一下即可在模板中找到
 
 Settings - APP Templates - URL
+
+适用平台为openwrt_x86_64
