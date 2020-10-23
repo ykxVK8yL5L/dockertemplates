@@ -16,7 +16,7 @@
 			],
 			"volumes": [{
 			      "container": "/app",
-			      "bind": "/opt/flask",
+			      "bind": "/opt/docker_data/6pan",
 			      "readonly": false
 			    }]
 		},
