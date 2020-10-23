@@ -4,7 +4,7 @@
 		{
 			"type": 1,
 			"title": "6pan",
-			"description": "6盘多用户加在线视频",
+			"description": "6盘多用户加在线视频，如需数据持久化绑定本地文件夹到容器/app/users目录。详细请看docker hub主页",
 			"categories": [
 				"cloud"
 			],
@@ -13,10 +13,7 @@
 			"image": "ykxvk8yl5l/6pan:latest",
 			"ports": [
 				"10003:10003/tcp"
-			],
-			"volumes": [{
-			      "container": "/app",
-			    }]
+			]
 		},
 		{
 			"type": 1,
