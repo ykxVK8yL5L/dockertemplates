@@ -1,6 +1,26 @@
 {
 	"version": "2",
-	"templates": [{
+	"templates": [
+		{
+			"type": 1,
+			"title": "6pan",
+			"description": "6盘多用户加在线视频",
+			"categories": [
+				"cloud"
+			],
+			"platform": "linux",
+			"logo": "https://v3-beta.6pan.cn/static/media/logo.1924c9f2.png",
+			"image": "ykxvk8yl5l/6pan:tagname",
+			"ports": [
+				"10003:10003/tcp"
+			],
+			"volumes": [{
+			      "container": "/app",
+			      "bind": "/opt/flask",
+			      "readonly": false
+			    }]
+		},
+		{
 			"type": 1,
 			"title": "Registry",
 			"description": "Docker image registry",
