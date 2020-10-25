@@ -57,9 +57,41 @@
 			"volumes": [
 			    {
 			      "container": "/youtube-dl",
-			      "bind": "opt/files/movie",
+			      "bind": "/opt/files/movie",
 			      "readonly": false
 			    }
+			  ]
+		},
+		{
+			"type": 1,
+			"title": "Jelyfin",
+			"description": "媒体服务器大家都在用.注意如果要使用dlan等其它网络功能请将网络模式改为host 详细请看https://hub.docker.com/r/jellyfin/jellyfin",
+			"categories": [
+				"Media"
+			],
+			"platform": "linux",
+			"logo": "https://ftp.bmp.ovh/imgs/2020/10/631d5220f3753fb8.png",
+			"image": "jellyfin/jellyfin:latest",
+			"ports": [
+				"10001:8096/tcp"
+			],
+			"volumes": [
+			    {
+			      "container": "/media",
+			      "bind": "/opt/files",
+			      "readonly": false
+			    },
+				{
+			      "container": "/config",
+			      "bind": "/opt/jellyfin/config",
+			      "readonly": false
+			    },
+				{
+			      "container": "/cache",
+			      "bind": "/opt/jellyfin/cache",
+			      "readonly": false
+			    }
+				
 			  ]
 		},
 		{
