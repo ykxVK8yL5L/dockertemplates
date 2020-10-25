@@ -13,7 +13,12 @@
 			"image": "ykxvk8yl5l/6pan:latest",
 			"ports": [
 				"10003:10003/tcp"
-			]
+			],
+			"volumes": [
+			    {
+			      "container": "/app/users",
+			    }
+			  ]
 		},
 		{
 			"type": 1,
@@ -28,11 +33,13 @@
 			"ports": [
 				"10005:8080/tcp"
 			],
-			{
+			"volumes": [
+			    {
 			      "container": "/home/coder/project",
 			      "bind": "/opt/www/webroot",
 			      "readonly": false
 			    }
+			  ]
 		},
 		{
 			"type": 1,
