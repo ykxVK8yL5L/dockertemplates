@@ -1,7 +1,6 @@
 {
 	"version": "2",
-	"templates": [
-		{
+	"templates": [{
 			"type": 1,
 			"title": "6pan",
 			"description": "6盘多用户加在线视频，如需数据持久化绑定本地文件夹到容器/app/users目录。详细请看https://hub.docker.com/r/ykxvk8yl5l/6pan",
@@ -14,11 +13,9 @@
 			"ports": [
 				"10003:10003/tcp"
 			],
-			"volumes": [
-			    {
-			      "container": "/app/users",
-			    }
-			  ]
+			"volumes": [{
+				"container": "/app/users"
+			}]
 		},
 		{
 			"type": 1,
@@ -33,13 +30,11 @@
 			"ports": [
 				"10005:8080/tcp"
 			],
-			"volumes": [
-			    {
-			      "container": "/home/coder/project",
-			      "bind": "/opt/www/webroot",
-			      "readonly": false
-			    }
-			  ]
+			"volumes": [{
+				"container": "/home/coder/project",
+				"bind": "/opt/www/webroot",
+				"readonly": false
+			}]
 		},
 		{
 			"type": 1,
@@ -54,13 +49,11 @@
 			"ports": [
 				"10002:8080/tcp"
 			],
-			"volumes": [
-			    {
-			      "container": "/youtube-dl",
-			      "bind": "/opt/files/movie",
-			      "readonly": false
-			    }
-			  ]
+			"volumes": [{
+				"container": "/youtube-dl",
+				"bind": "/opt/files/movie",
+				"readonly": false
+			}]
 		},
 		{
 			"type": 1,
@@ -75,24 +68,23 @@
 			"ports": [
 				"10001:8096/tcp"
 			],
-			"volumes": [
-			    {
-			      "container": "/media",
-			      "bind": "/opt/files",
-			      "readonly": false
-			    },
+			"volumes": [{
+					"container": "/media",
+					"bind": "/opt/files",
+					"readonly": false
+				},
 				{
-			      "container": "/config",
-			      "bind": "/opt/jellyfin/config",
-			      "readonly": false
-			    },
+					"container": "/config",
+					"bind": "/opt/jellyfin/config",
+					"readonly": false
+				},
 				{
-			      "container": "/cache",
-			      "bind": "/opt/jellyfin/cache",
-			      "readonly": false
-			    }
-				
-			  ]
+					"container": "/cache",
+					"bind": "/opt/jellyfin/cache",
+					"readonly": false
+				}
+
+			]
 		},
 		{
 			"type": 1,
@@ -1143,18 +1135,18 @@
 			}]
 		},
 		{
-	    "type": 4,
-	    "title": "Wordpress",
-	    "description": "Wordpress setup with a MySQL database",
-	    "note": "Deploys a Wordpress instance connected to a MySQL database.",
-	    "stackfile": "https://raw.githubusercontent.com/portainer/templates/master/stacks/wordpress/edge/docker-stack.yml"
-	  },
-	  {
-	    "type": 4,
-	    "title": "CockroachDB",
-	    "description": "CockroachDB cluster",
-	    "note": "Deploys an insecure CockroachDB cluster, please refer to <a href=\"https://www.cockroachlabs.com/docs/stable/orchestrate-cockroachdb-with-docker-swarm.html\" target=\"_blank\">CockroachDB documentation</a> for production deployments.",
-	    "stackfile": "https://raw.githubusercontent.com/portainer/templates/master/stacks/cockroachdb/edge/docker-stack.yml"
-	  }
+			"type": 4,
+			"title": "Wordpress",
+			"description": "Wordpress setup with a MySQL database",
+			"note": "Deploys a Wordpress instance connected to a MySQL database.",
+			"stackfile": "https://raw.githubusercontent.com/portainer/templates/master/stacks/wordpress/edge/docker-stack.yml"
+		},
+		{
+			"type": 4,
+			"title": "CockroachDB",
+			"description": "CockroachDB cluster",
+			"note": "Deploys an insecure CockroachDB cluster, please refer to <a href=\"https://www.cockroachlabs.com/docs/stable/orchestrate-cockroachdb-with-docker-swarm.html\" target=\"_blank\">CockroachDB documentation</a> for production deployments.",
+			"stackfile": "https://raw.githubusercontent.com/portainer/templates/master/stacks/cockroachdb/edge/docker-stack.yml"
+		}
 	]
 }
