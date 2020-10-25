@@ -43,6 +43,27 @@
 		},
 		{
 			"type": 1,
+			"title": "Video-dl",
+			"description": "下载视频用。注意访问地址是：http://{{host}}:8080/youtube-dl 详细请看https://hub.docker.com/r/kmb32123/youtube-dl-server",
+			"categories": [
+				"cloud"
+			],
+			"platform": "linux",
+			"logo": "https://ftp.bmp.ovh/imgs/2020/10/36a20b3031e5290a.png",
+			"image": "kmb32123/youtube-dl-server:latest",
+			"ports": [
+				"10002:8080/tcp"
+			],
+			"volumes": [
+			    {
+			      "container": "/youtube-dl",
+			      "bind": "opt/files/movie",
+			      "readonly": false
+			    }
+			  ]
+		},
+		{
+			"type": 1,
 			"title": "Registry",
 			"description": "Docker image registry",
 			"categories": [
