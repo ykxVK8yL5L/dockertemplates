@@ -16,7 +16,7 @@
 			],
 			"volumes": [{
 				"container": "/app/users",
-				"bind": "/docker_data/flask",
+				"bind": "/docker_data/6pan",
 				"readonly": false
 			}],
 			"network": "host"
