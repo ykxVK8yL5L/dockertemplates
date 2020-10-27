@@ -1,6 +1,7 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "6pan",
 			"type": 1,
 			"title": "6pan",
 			"description": "6盘多用户加在线视频，如需数据持久化绑定本地文件夹到容器/app/users目录。详细请看https://hub.docker.com/r/ykxvk8yl5l/6pan",
@@ -21,6 +22,7 @@
 			"network": "host"
 		},
 		{
+			"name": "editor",
 			"type": 1,
 			"title": "VSCode",
 			"description": "在线代码编译器。第一次请看容器日志，密码在日志路径里。如不需要密码修改文件内容为:auth: none.详细请看https://hub.docker.com/r/codercom/code-server",
@@ -40,6 +42,7 @@
 			}]
 		},
 		{
+			"name": "video-dl",
 			"type": 1,
 			"title": "Video-dl",
 			"description": "下载视频用。注意访问地址是：http://{{host}}:8080/youtube-dl 详细请看https://hub.docker.com/r/kmb32123/youtube-dl-server",
@@ -59,6 +62,7 @@
 			}]
 		},
 		{
+			"name": "jellyfin",
 			"type": 1,
 			"title": "Jelyfin",
 			"description": "媒体服务器大家都在用.注意如果要使用dlan等其它网络功能请将网络模式改为host 详细请看https://hub.docker.com/r/jellyfin/jellyfin",
