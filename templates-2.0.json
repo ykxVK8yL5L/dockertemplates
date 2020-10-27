@@ -122,7 +122,7 @@
 		{
 			"name": "php-fpm",
 			"type": 1,
-			"title": "php",
+			"title": "php-fpm",
 			"description": "High performance web server",
 			"categories": [
 				"Language"
