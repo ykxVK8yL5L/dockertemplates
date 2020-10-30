@@ -51,7 +51,7 @@
 			],
 			"platform": "linux",
 			"logo": "https://s1.ax1x.com/2020/10/25/BmMDdf.png",
-			"image": "kmb32123/youtube-dl-server:latest",
+			"image": "ykxvk8yl5l/video-dl:latest",
 			"ports": [
 				"10002:8080/tcp"
 			],
