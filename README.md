@@ -7,3 +7,6 @@
 Settings - APP Templates - URL
 
 适用平台为openwrt_x86_64
+
+关于nginx：
+注意第一次使用请不要挂载etc目录，挂载本地空etc目录的话会导致nginx启动失败。需要到container内把配置目录拷贝出来再挂载
