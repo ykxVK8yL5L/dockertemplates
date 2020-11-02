@@ -97,7 +97,7 @@
 			"name": "nginx",
 			"type": 1,
 			"title": "Nginx",
-			"description": "High performance web server",
+			"description": "High performance web server.注意第一次使用请不要挂载etc目录，挂载本地空etc目录的话会导致nginx启动失败。需要到container内把配置目录拷贝出来再挂载",
 			"categories": [
 				"webserver"
 			],
