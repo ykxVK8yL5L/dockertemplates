@@ -1,6 +1,26 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "WebDAV",
+			"type": 1,
+			"title": "WebDAV",
+			"description": "webdav服务器，如需数据持久化绑定本地文件夹到容器/var/lib/dav/data目录。详细请看https://hub.docker.com/r/bytemark/webdav",
+			"categories": [
+				"cloud"
+			],
+			"platform": "linux",
+			"logo": "https://s3.ax1x.com/2020/11/25/DUB5mF.png",
+			"image": "bytemark/webdav",
+			"ports": [
+				"10006:80/tcp"
+			],
+			"volumes": [{
+				"container": "/var/lib/dav/data",
+				"bind": "/docker_data/",
+				"readonly": false
+			}],
+			"network": "bridge"
+		},{
 			"name": "6pan",
 			"type": 1,
 			"title": "6pan",
