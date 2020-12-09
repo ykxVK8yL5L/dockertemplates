@@ -1,6 +1,51 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "aria2-pro",
+			"type": 1,
+			"title": "aria2-pro",
+			"description": "Aria2 Pro - 更好用的 Aria2 Docker 容器镜像:https://p3terx.com/archives/docker-aria2-pro.html",
+			"categories": [
+				"cloud"
+			],
+			"platform": "linux",
+			"logo": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3752871109,4089745176&fm=26&gp=0.jpg",
+			"image": "p3terx/aria2-pro",
+			"ports": [
+				"6800:6800/tcp",
+				"6888:6888/tcp",
+				"6888:6888/udp"
+			],
+			"volumes": [{
+				"container": "/config",
+				"bind": "/docker_data/aria2/config",
+				"readonly": false
+			}, {
+				"container": "/downloads",
+				"bind": "/docker_data/aria2//downloads",
+				"readonly": false
+			}],
+			"env": [{
+					"name": "RPC_SECRET",
+					"default": "123456",
+					"label": "RPC_SECRET",
+					"description": "RPC_SECRET"
+				},
+				{
+					"name": "RPC_PORT",
+					"default": "6800",
+					"label": "RPC_PORT",
+					"description": "RPC_PORT"
+				},
+				{
+					"name": "LISTEN_PORT",
+					"default": "6888",
+					"label": "LISTEN_PORT",
+					"description": "LISTEN_PORT"
+				}
+			],
+			"network": "bridge"
+		}, {
 			"name": "WebDAV",
 			"type": 1,
 			"title": "WebDAV",
