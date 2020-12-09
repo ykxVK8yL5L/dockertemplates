@@ -22,7 +22,7 @@
 				"readonly": false
 			}, {
 				"container": "/downloads",
-				"bind": "/docker_data/aria2//downloads",
+				"bind": "/docker_data/aria2/downloads",
 				"readonly": false
 			}],
 			"env": [{
