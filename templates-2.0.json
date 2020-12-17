@@ -1,6 +1,21 @@
 {
 	"version": "2",
 	"templates": [{
+			"type": 2,
+			"name": "mysql-stack",
+			"title": "mysql",
+			"description": "The most popular open-source database.homepage:https://hub.docker.com/_/mysql",
+			"note": "The most popular open-source database.homepage:https://hub.docker.com/_/mysql.",
+			"categories": [
+				"database"
+			],
+			"platform": "linux",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mysql.png",
+			"repository": {
+				"url": "https://github.com/ykxVK8yL5L/dockertemplates",
+				"stackfile": "stacks/mysql/docker-stack.yml"
+			}
+		},{
 			"name": "nextcloud",
 			"type": 1,
 			"title": "nextcloud",
