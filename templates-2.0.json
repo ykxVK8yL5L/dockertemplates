@@ -308,13 +308,16 @@
 			"image": "mysql:latest",
 			"env": [{
 				"name": "MYSQL_ROOT_PASSWORD",
-				"label": "Root password"
+				"label": "Root password",
+				"default": "root"
 			}],
 			"ports": [
-				"3306/tcp"
+				"3306:3306/tcp"
 			],
 			"volumes": [{
-				"container": "/var/lib/mysql"
+				"container": "/var/lib/mysql",
+				"bind": "/docker_data/mysql",
+				"readonly": false
 			}]
 		},
 		{
