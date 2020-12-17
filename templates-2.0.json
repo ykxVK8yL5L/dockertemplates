@@ -5,7 +5,7 @@
 			"name": "mysql-stack",
 			"title": "mysql",
 			"description": "The most popular open-source database.homepage:https://hub.docker.com/_/mysql",
-			"note": "The most popular open-source database.homepage:https://hub.docker.com/_/mysql.",
+			"note": "The most popular open-source database",
 			"categories": [
 				"database"
 			],
