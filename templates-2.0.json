@@ -1,9 +1,9 @@
 {
 	"version": "2",
 	"templates": [{
-			"type": 4,
 			"name": "mysql-stack",
-			"title": "Wordpress",
+			"type": 4,
+			"title": "mysql-stack",
 			"description": "The most popular open-source database.homepage:https://hub.docker.com/_/mysql",
 			"note": "The most popular open-source database.",
 			"stackfile": "https://github.com/ykxVK8yL5L/dockertemplates/stacks/mysql/docker-stack.yml"
