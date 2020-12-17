@@ -11,6 +11,5 @@ Settings - APP Templates - URL
 关于nginx：
 注意第一次使用请不要挂载etc目录，挂载本地空etc目录的话会导致nginx启动失败。需要到container内把配置目录拷贝出来再挂载
 
-20201217更新：加入了mysql方便安装nextcloud。有可能会出现2个（我这里暂时没有显示第一个）。
-尽量用第一个吧，包含一个管理界面，不行的话再使用container类型的即第二个。
+20201217更新：加入了mysql方便安装nextcloud。
 如提示caching_sha2_password.可参考这篇文章解决：https://www.cnblogs.com/jonrain0625/p/11306412.html
