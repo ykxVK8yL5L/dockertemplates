@@ -1,6 +1,26 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "nextcloud",
+			"type": 1,
+			"title": "nextcloud",
+			"description": "A safe home for all your data 容器镜像:https://hub.docker.com/_/nextcloud",
+			"categories": [
+				"cloud"
+			],
+			"platform": "linux",
+			"logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-nextcloud-logo.png",
+			"image": "nextcloud",
+			"ports": [
+				"10007:80/tcp"
+			],
+			"volumes": [{
+				"container": "/var/www/html",
+				"bind": "/docker_data/nextcloud",
+				"readonly": false
+			}],
+			"network": "bridge"
+		}, {
 			"name": "aria2-pro",
 			"type": 1,
 			"title": "aria2-pro",
