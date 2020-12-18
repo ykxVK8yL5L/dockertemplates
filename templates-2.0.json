@@ -4,7 +4,7 @@
 			"name": "nextcloud",
 			"type": 1,
 			"title": "nextcloud",
-			"description": "A safe home for all your data 容器镜像:https://hub.docker.com/_/nextcloud",
+			"description": "A safe home for all your data 容器镜像:https://hub.docker.com/_/nextcloud.",
 			"categories": [
 				"cloud"
 			],
