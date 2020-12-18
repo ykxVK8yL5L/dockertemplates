@@ -1,18 +1,6 @@
 {
 	"version": "2",
 	"templates": [{
-  "type": "stack",
-  "title": "Mysql-swarm",
-  "description": "Mysql-swarm:https://hub.docker.com/_/mysql",
-  "note": "Mysql-swarm:https://hub.docker.com/_/mysql.",
-  "categories": ["database"],
-  "platform": "linux",
-  "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mysql.png",
-  "repository": {
-    "url": "https://github.com/ykxVK8yL5L/dockertemplates",
-    "stackfile": "stacks/mysql-stack.yml"
-  }
-},{
 			"name": "nextcloud",
 			"type": 1,
 			"title": "nextcloud",
