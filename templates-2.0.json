@@ -9,7 +9,7 @@
 				"cloud"
 			],
 			"platform": "linux",
-			"logo": "https://ftp.bmp.ovh/imgs/2021/03/e9b2dca0adb29d40.jpeg",
+			"logo": "https://s3.ax1x.com/2021/03/16/6rx3CD.jpg",
 			"image": "ykxvk8yl5l/mynav:latest",
 			"ports": [
 				"10008:80/tcp"
