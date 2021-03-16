@@ -12,7 +12,7 @@
 			"logo": "https://s3.ax1x.com/2021/03/16/6rx3CD.jpg",
 			"image": "ykxvk8yl5l/mynav:latest",
 			"ports": [
-				"10008:80/tcp"
+				"10008:8080/tcp"
 			],
 			"network": "bridge"
 		},{
