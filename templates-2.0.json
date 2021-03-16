@@ -1,6 +1,21 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "MyNav",
+			"type": 1,
+			"title": "MyNav",
+			"description": "自用NAS导航 详细请看https://hub.docker.com/r/ykxvk8yl5l/mynav",
+			"categories": [
+				"cloud"
+			],
+			"platform": "linux",
+			"logo": "https://ftp.bmp.ovh/imgs/2021/03/e9b2dca0adb29d40.jpeg",
+			"image": "ykxvk8yl5l/mynav:latest",
+			"ports": [
+				"10008:80/tcp"
+			],
+			"network": "bridge"
+		},{
 			"name": "nextcloud",
 			"type": 1,
 			"title": "nextcloud",
