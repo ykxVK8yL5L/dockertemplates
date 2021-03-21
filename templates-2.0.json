@@ -9,7 +9,7 @@
 				"tool"
 			],
 			"platform": "linux",
-			"logo": "https://s3.ax1x.com/2021/03/16/6rx3CD.jpg",
+			"logo": "https://z3.ax1x.com/2021/03/21/65YhL9.png",
 			"image": "tindy2013/subconverter:latest",
 			"ports": [
 				"25500:25500/tcp"
