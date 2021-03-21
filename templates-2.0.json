@@ -15,7 +15,7 @@
 				"25500:25500/tcp"
 			],
 			"network": "bridge"
-		}，{
+		},{
 			"name": "MyNav",
 			"type": 1,
 			"title": "MyNav",
