@@ -510,8 +510,8 @@
 			"image": "gitlab/gitlab-ce:latest",
 			"ports": [
 				"20080:80/tcp",
-				"20443/tcp",
-				"20022/tcp"
+				"20443:443/tcp",
+				"20022:22/tcp"
 			],
 			"volumes": [{
 					"container": "/etc/gitlab",
