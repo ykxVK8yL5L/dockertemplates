@@ -498,6 +498,7 @@
 		{
 			"type": 1,
 			"title": "Gitlab CE",
+			"name": "Gitlab",
 			"description": "Open-source end-to-end software development platform",
 			"note": "Default username is <b>root</b>. Check the <a href=\"https://docs.gitlab.com/omnibus/docker/README.html#after-starting-a-container\" target=\"_blank\">Gitlab documentation</a> to get started.",
 			"categories": [
@@ -508,18 +509,24 @@
 			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/gitlab_ce.png",
 			"image": "gitlab/gitlab-ce:latest",
 			"ports": [
-				"80/tcp",
-				"443/tcp",
-				"22/tcp"
+				"20080:80/tcp",
+				"20443/tcp",
+				"20022/tcp"
 			],
 			"volumes": [{
-					"container": "/etc/gitlab"
+					"container": "/etc/gitlab",
+				"bind": "/docker_data/gitlab/config",
+				"readonly": false
 				},
 				{
-					"container": "/var/log/gitlab"
+					"container": "/var/log/gitlab",
+					"bind": "/docker_data/gitlab/logs",
+				"readonly": false
 				},
 				{
-					"container": "/var/opt/gitlab"
+					"container": "/var/opt/gitlab",
+					"bind": "/docker_data/gitlab/data",
+				"readonly": false
 				}
 			]
 		},
