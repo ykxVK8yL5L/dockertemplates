@@ -144,13 +144,13 @@
 		}, {
 			"name": "Codimd",
 			"type": 1,
-			"title": "Gitea",
+			"title": "Codimd",
 			"description": "在线markdown编辑器，需要Mysql。详细请看https://hub.docker.com/r/linuxserver/codimd",
 			"categories": [
 				"Tool"
 			],
 			"platform": "linux",
-			"logo": "https://demo.codimd.org/",
+			"logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/codimd-icon.png",
 			"image": "linuxserver/codimd",
 			"env": [{
 					"name": "PUID",
