@@ -1,6 +1,74 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "Codimd",
+			"type": 1,
+			"title": "Gitea",
+			"description": "在线markdown编辑器，需要Mysql。详细请看https://hub.docker.com/r/linuxserver/codimd",
+			"categories": [
+				"Tool"
+			],
+			"platform": "linux",
+			"logo": "https://demo.codimd.org/",
+			"image": "linuxserver/codimd",
+			"env": [{
+					"name": "PUID",
+					"default": "1000",
+					"label": "PUID",
+					"description": "PUID"
+				},
+				{
+					"name": "PGID",
+					"default": "1000",
+					"label": "PGID",
+					"description": "PGID"
+				},
+				{
+					"name": "DB_HOST",
+					"default": "192.168.1.168",
+					"label": "DB_HOST",
+					"description": "DB_HOST"
+				},
+				{
+					"name": "DB_PORT",
+					"default": "3306",
+					"label": "DB_PORT",
+					"description": "DB_PORT"
+				},
+				{
+					"name": "DB_USER",
+					"default": "root",
+					"label": "DB_USER",
+					"description": "DB_USER"
+				},
+				{
+					"name": "DB_PASS",
+					"default": "root",
+					"label": "DB_PASS",
+					"description": "DB_PASS"
+				},
+				{
+					"name": "DB_NAME",
+					"default": "codimd",
+					"label": "DB_NAME",
+					"description": "DB_NAME"
+				},
+				{
+					"name": "TZ",
+					"default": "Asia/Shanghai",
+					"label": "TZ",
+					"description": "TZ"
+				}
+			],
+			"ports": [
+				"10020:3000/tcp"
+			],
+			"volumes": [{
+				"container": "/config",
+				"bind": "/docker_data/codimd/config",
+				"readonly": false
+			}]
+		}, {
 			"name": "Gitea",
 			"type": 1,
 			"title": "Gitea",
@@ -20,7 +88,7 @@
 				"bind": "/docker_data/gitea/data",
 				"readonly": false
 			}]
-		},{
+		}, {
 			"name": "Subconverter",
 			"type": 1,
 			"title": "Subconverter",
@@ -34,8 +102,9 @@
 			"ports": [
 				"25500:25500/tcp"
 			],
-			"network": "bridge"},
-		      {
+			"network": "bridge"
+		},
+		{
 			"name": "MyNav",
 			"type": 1,
 			"title": "MyNav",
@@ -50,7 +119,7 @@
 				"10008:8080/tcp"
 			],
 			"network": "bridge"
-		},		{
+		}, {
 			"type": 1,
 			"title": "File browser",
 			"description": "A web file manager",
@@ -75,7 +144,7 @@
 				"readonly": false
 			}],
 			"command": "--port 80 --database /data/database.db --root /srv"
-		},{
+		}, {
 			"name": "nextcloud",
 			"type": 1,
 			"title": "nextcloud",
@@ -535,18 +604,18 @@
 			],
 			"volumes": [{
 					"container": "/etc/gitlab",
-				"bind": "/docker_data/gitlab/config",
-				"readonly": false
+					"bind": "/docker_data/gitlab/config",
+					"readonly": false
 				},
 				{
 					"container": "/var/log/gitlab",
 					"bind": "/docker_data/gitlab/logs",
-				"readonly": false
+					"readonly": false
 				},
 				{
 					"container": "/var/opt/gitlab",
 					"bind": "/docker_data/gitlab/data",
-				"readonly": false
+					"readonly": false
 				}
 			]
 		},
