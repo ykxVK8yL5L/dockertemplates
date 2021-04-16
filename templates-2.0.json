@@ -195,7 +195,7 @@
 				"10003:10003/tcp"
 			],
 			"volumes": [{
-				"container": "/app/users",
+				"container": "/usr/src/app/users",
 				"bind": "/docker_data/6pan",
 				"readonly": false
 			}],
