@@ -145,7 +145,7 @@
 			"name": "WebDAV",
 			"type": 1,
 			"title": "WebDAV",
-			"description": "webdav服务器，如需数据持久化绑定本地文件夹到容器/var/lib/dav/data目录。默认用户名密码为root详细请看https://hub.docker.com/r/bytemark/webdav",
+			"description": "webdav服务器,如需数据持久化绑定本地文件夹到容器/var/lib/dav/data目录。默认用户名密码为root详细请看https://hub.docker.com/r/bytemark/webdav",
 			"categories": [
 				"cloud"
 			],
