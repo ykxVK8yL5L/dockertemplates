@@ -396,6 +396,24 @@
 				"bind": "/docker_data/mysql",
 				"readonly": false
 			}]
+		},{
+			"name": "emqx",
+			"type": 1,
+			"title": "Emqx",
+			"description": "5G 时代，万物互联消息引擎。详细请看https://hub.docker.com/r/emqx/emqx",
+			"categories": [
+				"Tool"
+			],
+			"platform": "linux",
+			"logo": "https://docs.emqx.cn/logo.png",
+			"image": "emqx/emqx:latest",
+			"ports": [
+				"1883:1883/tcp",
+				"8081:8081/tcp",
+				"8083:8083/tcp",
+				"8883:8883/tcp",
+				"8084:8084/tcp"
+			]
 		},
 		{
 			"type": 1,
