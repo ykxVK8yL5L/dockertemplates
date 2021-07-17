@@ -190,7 +190,7 @@
 			],
 			"platform": "linux",
 			"logo": "https://v3-beta.6pan.cn/static/media/logo.1924c9f2.png",
-			"image": "ykxvk8yl5l/6pan:latest",
+			"image": "ykxvk8yl5l/zyplayer:latest",
 			"ports": [
 				"10003:10003/tcp"
 			],
