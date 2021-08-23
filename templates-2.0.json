@@ -1,6 +1,60 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "web3",
+			"type": 1,
+			"title": "web3.storage",
+			"description": "Aria2 Pro超载完成后上传到web3.storage 容器镜像:https://hub.docker.com/r/ykxvk8yl5l/web3",
+			"categories": [
+				"cloud"
+			],
+			"platform": "linux",
+			"logo": "https://web3.storage/w3storage-logo.svg",
+			"image": "ykxvk8yl5l/web3",
+			"ports": [
+			        "10009:8080/tcp",
+				"6800:6800/tcp",
+				"6888:6888/tcp",
+				"6888:6888/udp"
+			],
+			"volumes": [{
+				"container": "/config",
+				"bind": "/docker_data/aria2/config",
+				"readonly": false
+			}, {
+				"container": "/downloads",
+				"bind": "/docker_data/aria2/downloads",
+				"readonly": false
+			},{
+				"container": "/u/upload.db",
+				"bind": "/docker_data/aria2/config/upload.db",
+				"readonly": false
+			},{
+				"container": "/u/token.ini",
+				"bind": "/docker_data/aria2/config/token.ini",
+				"readonly": false
+			}],
+			"env": [{
+					"name": "RPC_SECRET",
+					"default": "123456",
+					"label": "RPC_SECRET",
+					"description": "RPC_SECRET"
+				},
+				{
+					"name": "RPC_PORT",
+					"default": "6800",
+					"label": "RPC_PORT",
+					"description": "RPC_PORT"
+				},
+				{
+					"name": "LISTEN_PORT",
+					"default": "6888",
+					"label": "LISTEN_PORT",
+					"description": "LISTEN_PORT"
+				}
+			],
+			"network": "bridge"
+		},{
 			"name": "Gitea",
 			"type": 1,
 			"title": "Gitea",
