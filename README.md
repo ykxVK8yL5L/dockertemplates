@@ -6,6 +6,7 @@
 
 Settings - APP Templates - URL
 
+https://raw.githubusercontent.com/ykxVK8yL5L/dockertemplates/main/templates-2.0.json
 适用平台为openwrt_x86_64
 
 关于nginx：
