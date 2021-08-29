@@ -1,6 +1,18 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "ipfs",
+			"type": 1,
+			"title": "go-ipfs",
+			"description": "可配合web3.storage使用 实测速度有提升 容器镜像:https://hub.docker.com/r/ipfs/go-ipfs",
+			"categories": [
+				"cloud"
+			],
+			"platform": "linux",
+			"logo": "https://secure.gravatar.com/avatar/a105f594a3b966afa8c1d09e952d5dbd.jpg",
+			"image": "ipfs/go-ipfs",
+			"network": "bridge"
+		},{
 			"name": "web3",
 			"type": 1,
 			"title": "web3.storage",
