@@ -11,6 +11,15 @@
 			"platform": "linux",
 			"logo": "https://secure.gravatar.com/avatar/a105f594a3b966afa8c1d09e952d5dbd.jpg",
 			"image": "ipfs/go-ipfs",
+			"volumes": [{
+				"container": "/export",
+				"bind": "/docker_data/ipfs/export",
+				"readonly": false
+			}, {
+				"container": "/data/ipfs",
+				"bind": "/docker_data/ipfs/data/ipfs",
+				"readonly": false
+			}],
 			"network": "bridge"
 		},{
 			"name": "web3",
