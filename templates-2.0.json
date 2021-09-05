@@ -12,7 +12,7 @@
 			"logo": "https://secure.gravatar.com/avatar/a105f594a3b966afa8c1d09e952d5dbd.jpg",
 			"image": "ykxvk8yl5l/ipfs",
 			"ports": [
-			        "10011:8080/tcp",
+			        "10011:8080/tcp"
 			],
 			"volumes": [{
 				"container": "/go/src/app/config",
@@ -32,7 +32,7 @@
 			"logo": "https://secure.gravatar.com/avatar/a105f594a3b966afa8c1d09e952d5dbd.jpg",
 			"image": "ipfs/go-ipfs",
 			"ports": [
-			        "10010:8080/tcp",
+			        "10010:8080/tcp"
 			],
 			"volumes": [{
 				"container": "/export",
