@@ -15,7 +15,7 @@
 			        "10011:8080/tcp"
 			],
 			"volumes": [{
-				"container": "/go/src/app/config",
+				"container": "/root/config",
 				"bind": "/docker_data/ipfs-actions/",
 				"readonly": false
 			}],
