@@ -1,6 +1,26 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "ipfs-actions",
+			"type": 1,
+			"title": "ipfs-actions",
+			"description": "ipfs下载记录本地管理及提交下载任务 容器镜像:https://hub.docker.com/r/ykxvk8yl5l/ipfs",
+			"categories": [
+				"cloud"
+			],
+			"platform": "linux",
+			"logo": "https://secure.gravatar.com/avatar/a105f594a3b966afa8c1d09e952d5dbd.jpg",
+			"image": "ykxvk8yl5l/ipfs",
+			"ports": [
+			        "10011:8080/tcp",
+			],
+			"volumes": [{
+				"container": "/go/src/app/config",
+				"bind": "/docker_data/ipfs-actions/",
+				"readonly": false
+			}],
+			"network": "bridge"
+		},{
 			"name": "ipfs",
 			"type": 1,
 			"title": "go-ipfs",
@@ -11,6 +31,9 @@
 			"platform": "linux",
 			"logo": "https://secure.gravatar.com/avatar/a105f594a3b966afa8c1d09e952d5dbd.jpg",
 			"image": "ipfs/go-ipfs",
+			"ports": [
+			        "10010:8080/tcp",
+			],
 			"volumes": [{
 				"container": "/export",
 				"bind": "/docker_data/ipfs/export",
