@@ -4,9 +4,9 @@
 			"name": "adminmongo",
 			"type": 1,
 			"title": "adminmongo",
-			"description": "mongodb web管理UI. 容器镜像:https://hub.docker.com/r/mrvautin/adminmongo",
+			"description": "mongodb web管理UI。容器镜像:https://hub.docker.com/r/mrvautin/adminmongo",
 			"categories": [
-				"cloud"
+				"tool"
 			],
 			"platform": "linux",
 			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mongo.png",
