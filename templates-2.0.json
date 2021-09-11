@@ -1,6 +1,33 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "adminmongo",
+			"type": 1,
+			"title": "adminmongo",
+			"description": "mongodb web管理UI.配置文件目录需第一次生成后自行拷贝。 容器镜像:https://hub.docker.com/r/mrvautin/adminmongo",
+			"categories": [
+				"cloud"
+			],
+			"platform": "linux",
+			"logo": "https://secure.gravatar.com/avatar/a105f594a3b966afa8c1d09e952d5dbd.jpg",
+			"image": "mrvautin/adminmongo",
+			"ports": [
+			        "10012:1234/tcp"
+			],
+			"volumes": [{
+				"container": "/app/user/config",
+				"bind": "/docker_data/adminmongo/config",
+				"readonly": false
+			}],
+			"env": [{
+					"name": "HOST",
+					"default": "0.0.0.0",
+					"label": "HOST",
+					"description": "HOST监听网址"
+				}
+			],
+			"network": "bridge"
+		},{
 			"name": "ipfs-actions",
 			"type": 1,
 			"title": "ipfs-actions",
