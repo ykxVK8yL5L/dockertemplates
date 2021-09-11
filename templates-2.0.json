@@ -300,10 +300,10 @@
 			"network": "host"
 		},
 		{
-			"name": "editor",
+			"name": "editor-ipad",
 			"type": 1,
 			"title": "VSCode",
-			"description": "在线代码编译器。第一次请看容器日志，密码在日志路径里。如不需要密码修改文件内容为:auth: none.详细请看https://hub.docker.com/r/codercom/code-server",
+			"description": "试图解决ipad白屏问题.在线代码编译器。第一次请看容器日志，密码在日志路径里。如不需要密码修改文件内容为:auth: none.详细请看https://hub.docker.com/r/codercom/code-server",
 			"categories": [
 				"Tool"
 			],
