@@ -4,7 +4,7 @@
 			"name": "adminmongo",
 			"type": 1,
 			"title": "adminmongo",
-			"description": "mongodb web管理UI.配置文件目录需第一次生成后自行拷贝。 容器镜像:https://hub.docker.com/r/mrvautin/adminmongo",
+			"description": "mongodb web管理UI. 容器镜像:https://hub.docker.com/r/mrvautin/adminmongo",
 			"categories": [
 				"cloud"
 			],
@@ -15,8 +15,8 @@
 			        "10012:1234/tcp"
 			],
 			"volumes": [{
-				"container": "/app/user/config",
-				"bind": "/docker_data/adminmongo/config",
+				"container": "/app/user/config/config.json",
+				"bind": "/docker_data/adminmongo/config/config.json",
 				"readonly": false
 			}],
 			"env": [{
