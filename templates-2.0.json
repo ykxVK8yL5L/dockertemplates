@@ -302,14 +302,14 @@
 		{
 			"name": "editor-ipad",
 			"type": 1,
-			"title": "VSCode",
+			"title": "VSCode-ipad",
 			"description": "试图解决ipad白屏问题.在线代码编译器。第一次请看容器日志，密码在日志路径里。如不需要密码修改文件内容为:auth: none.详细请看https://hub.docker.com/r/codercom/code-server",
 			"categories": [
 				"Tool"
 			],
 			"platform": "linux",
 			"logo": "https://s1.ax1x.com/2020/10/25/BmMvex.png",
-			"image": "codercom/code-server:3.8.0",
+			"image": "codercom/code-server:3.7.4",
 			"ports": [
 				"10005:8080/tcp"
 			],
