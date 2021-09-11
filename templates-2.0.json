@@ -303,7 +303,7 @@
 			"name": "editor-ipad",
 			"type": 1,
 			"title": "VSCode-ipad",
-			"description": "通过降低版本至3.9.0解决ipad的白屏问题.在线代码编译器。第一次请看容器日志，密码在日志路径里。如不需要密码修改文件内容为:auth: none.详细请看https://hub.docker.com/r/codercom/code-server",
+			"description": "通过降低版本至3.10.2解决ipad的白屏问题.在线代码编译器。第一次请看容器日志，密码在日志路径里。如不需要密码修改文件内容为:auth: none.详细请看https://hub.docker.com/r/codercom/code-server",
 			"categories": [
 				"Tool"
 			],
