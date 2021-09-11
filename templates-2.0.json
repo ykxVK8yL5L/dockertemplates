@@ -9,7 +9,7 @@
 				"cloud"
 			],
 			"platform": "linux",
-			"logo": "https://secure.gravatar.com/avatar/a105f594a3b966afa8c1d09e952d5dbd.jpg",
+			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mongo.png",
 			"image": "mrvautin/adminmongo",
 			"ports": [
 			        "10012:1234/tcp"
