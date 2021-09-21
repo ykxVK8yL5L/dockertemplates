@@ -15,8 +15,8 @@
 			        "10012:1234/tcp"
 			],
 			"volumes": [{
-				"container": "/app/user/config/config.json",
-				"bind": "/docker_data/adminmongo/config/config.json",
+				"container": "/app/user/config",
+				"bind": "/docker_data/adminmongo/config",
 				"readonly": false
 			}],
 			"env": [{
