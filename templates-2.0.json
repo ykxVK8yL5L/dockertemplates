@@ -1,6 +1,45 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "mywiki",
+			"type": 1,
+			"title": "Wiki.js",
+			"description": "Wiki.js开源wiki。容器镜像:https://hub.docker.com/r/requarks/wiki",
+			"categories": [
+				"tool"
+			],
+			"platform": "linux",
+			"logo": "https://static.requarks.io/logo/wikijs-butterfly.svg",
+			"image": "requarks/wiki:2",
+			"ports": [
+			        "10013:3000/tcp"
+			],
+			"volumes": [{
+				"container": "/root",
+				"bind": "/docker_data/mywiki",
+				"readonly": false
+			}],
+			"env": [{
+					"name": "DB_TYPE",
+					"default": "sqlite",
+					"label": "DB_TYPE",
+					"description": "数据库类型"
+				},
+				{
+					"name": "DB_FILEPATH",
+					"default": "/root/mywiki.db",
+					"label": "DB_FILEPATH",
+					"description": "数据库路径"
+				},
+				{
+					"name": "DB_NAME",
+					"default": "wiki",
+					"label": "DB_NAME",
+					"description": "数据库名称"
+				}
+			],
+			"network": "bridge"
+		},{
 			"name": "adminmongo",
 			"type": 1,
 			"title": "adminmongo",
