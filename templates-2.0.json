@@ -1,6 +1,34 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "Axum-web",
+			"type": 1,
+			"title": "Axum-web",
+			"description": "一个小工具，目前没啥大用。容器镜像:https://hub.docker.com/r/ykxvk8yl5l/axum-web",
+			"categories": [
+				"tool"
+			],
+			"platform": "linux",
+			"logo": "",
+			"image": "requarks/wiki:2",
+			"ports": [
+			        "10099:10099/tcp",
+			        "10098:10098/tcp"
+			],
+			"volumes": [{
+				"container": "/root/music_data",
+				"bind": "/docker_data/axum-web",
+				"readonly": false
+			}],
+			"env": [{
+					"name": "DATABASE",
+					"default": "axum-web.db",
+					"label": "DATABASE",
+					"description": "数据库名称"
+				}
+			],
+			"network": "bridge"
+		},{
 			"name": "mywiki",
 			"type": 1,
 			"title": "Wiki.js",
