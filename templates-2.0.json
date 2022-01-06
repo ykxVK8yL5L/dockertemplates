@@ -10,7 +10,7 @@
 			],
 			"platform": "linux",
 			"logo": "",
-			"image": "requarks/wiki:2",
+			"image": "ykxvk8yl5l/axum-web",
 			"ports": [
 			        "10099:10099/tcp",
 			        "10098:10098/tcp"
