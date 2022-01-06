@@ -16,7 +16,7 @@
 			        "10098:10098/tcp"
 			],
 			"volumes": [{
-				"container": "/root/music_data",
+				"container": "/root/music-data",
 				"bind": "/docker_data/axum-web",
 				"readonly": false
 			}],
