@@ -1,6 +1,26 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "Alist",
+			"type": 1,
+			"title": "Alist",
+			"description": "挂载多个网盘到本地，提供webdav服务。默认密码:alist.容器镜像:https://hub.docker.com/r/xhofe/alist",
+			"categories": [
+				"tool"
+			],
+			"platform": "linux",
+			"logo": "",
+			"image": "xhofe/alist",
+			"ports": [
+			        "10100:5244/tcp"
+			],
+			"volumes": [{
+				"container": "/opt/alist/data",
+				"bind": "/docker_data/alist",
+				"readonly": false
+			}],
+			"network": "bridge"
+		},{
 			"name": "Axum-web",
 			"type": 1,
 			"title": "Axum-web",
