@@ -1,6 +1,34 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "Pikpak-webdav",
+			"type": 1,
+			"title": "Pikpak-webdav",
+			"description": "Pikpak-webdav的rust实现，提供webdav服务.容器镜像:https://hub.docker.com/r/ykxvk8yl5l/pikpak-webdav",
+			"categories": [
+				"cloud"
+			],
+			"platform": "linux",
+			"logo": "",
+			"image": "ykxvk8yl5l/pikpak-webdav",
+			"ports": [
+			        "9867:9867/tcp"
+			],
+			"env": [{
+					"name": "PIKPAK_USER",
+					"default": "PIKPAK_USER",
+					"label": "PIKPAK_USER",
+					"description": "Pikpak用记名"
+				},
+				{
+					"name": "PIKPAK_PASSWORD",
+					"default": "PIKPAK_PASSWORD",
+					"label": "PIKPAK_PASSWORD",
+					"description": "Pikpak密码"
+				}
+			],
+			"network": "bridge"
+		},{
 			"name": "Alist",
 			"type": 1,
 			"title": "Alist",
