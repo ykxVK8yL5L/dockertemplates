@@ -16,13 +16,13 @@
 			],
 			"env": [{
 					"name": "PIKPAK_USER",
-					"default": "PIKPAK_USER",
+					"default": "",
 					"label": "PIKPAK_USER",
-					"description": "Pikpak用记名"
+					"description": "Pikpak用户名"
 				},
 				{
 					"name": "PIKPAK_PASSWORD",
-					"default": "PIKPAK_PASSWORD",
+					"default": "",
 					"label": "PIKPAK_PASSWORD",
 					"description": "Pikpak密码"
 				}
