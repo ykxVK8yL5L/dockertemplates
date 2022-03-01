@@ -4,7 +4,7 @@
 			"name": "Pikpak-webdav",
 			"type": 1,
 			"title": "Pikpak-webdav",
-			"description": "Pikpak-webdav的rust实现，提供webdav服务.容器镜像:https://hub.docker.com/r/ykxvk8yl5l/pikpak-webdav",
+			"description": "Pikpak-webdav的rust实现.提供webdav服务.容器镜像:https://hub.docker.com/r/ykxvk8yl5l/pikpak-webdav",
 			"categories": [
 				"cloud"
 			],
