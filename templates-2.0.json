@@ -38,7 +38,7 @@
 			}],
 			"devices": [{
 				"host": "/dev/fuse",
-				"container": "/dev/fuse",
+				"container": "/dev/fuse"
 			}],
 			"network": "bridge"
 		},{
