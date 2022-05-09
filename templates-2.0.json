@@ -4,7 +4,7 @@
 			"name": "Pikpak-fuse",
 			"type": 1,
 			"title": "Pikpak-fuse",
-			"description": "Pikpak-fuse的rust实现.用来把pikpak挂载到本地目录.如果挂载失败，需要在主机上执行命令:mount --make-shared /  共享挂载点.容器镜像:https://hub.docker.com/r/ykxvk8yl5l/pikpak-fuse",
+			"description": "Pikpak-fuse的rust实现.用来把pikpak挂载到本地目录.如果挂载失败，需要在主机上执行命令:mount --make-shared /  共享挂载点.并修改容器添加devices参数:/dev/fuse容器镜像:https://hub.docker.com/r/ykxvk8yl5l/pikpak-fuse",
 			"categories": [
 				"cloud"
 			],
