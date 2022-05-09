@@ -1,47 +1,6 @@
 {
 	"version": "2",
 	"templates": [{
-			"name": "Pikpak-fuse",
-			"type": 1,
-			"title": "Pikpak-fuse",
-			"description": "Pikpak-fuse的rust实现.用来把pikpak挂载到本地目录.如果挂载失败，需要在主机上执行命令:mount --make-shared /  共享挂载点.并修改容器添加devices参数:/dev/fuse容器镜像:https://hub.docker.com/r/ykxvk8yl5l/pikpak-fuse",
-			"categories": [
-				"cloud"
-			],
-			"platform": "linux",
-			"logo": "",
-			"image": "ykxvk8yl5l/pikpak-fuse",
-			"privileged": true,
-			"env": [{
-					"name": "Pikpak_USER",
-					"default": "",
-					"label": "Pikpak_USER",
-					"description": "Pikpak用户名"
-				},
-				{
-					"name": "Pikpak_PASSWORD",
-					"default": "",
-					"label": "Pikpak_PASSWORD",
-					"description": "Pikpak密码"
-				},
-				{
-					"name": "PROXY_URL",
-					"default": "",
-					"label": "PROXY_URL",
-					"description": "代理网址"
-				}
-			],
-			"volumes": [{
-				"container": "/mnt/pikpakDrive:shared",
-				"bind": "/mnt/pikpakDrive",
-				"readonly": false
-			}],
-			"devices": [{
-				"host": "/dev/fuse",
-				"container": "/dev/fuse"
-			}],
-			"network": "bridge"
-		},{
 			"name": "Pikpak-webdav",
 			"type": 1,
 			"title": "Pikpak-webdav",
