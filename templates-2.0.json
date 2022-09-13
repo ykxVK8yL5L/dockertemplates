@@ -445,7 +445,7 @@
 				"bind": "/docker_data/6pan",
 				"readonly": false
 			}],
-			"network": "host"
+			"network": "bridge"
 		},
 		{
 			"name": "editor-ipad",
