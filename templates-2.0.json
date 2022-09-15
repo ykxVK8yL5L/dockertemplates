@@ -131,7 +131,7 @@
 			],
 			"platform": "linux",
 			"logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mongo.png",
-			"image": "mrvautin/adminmongo",
+			"image": "ykxvk8yl5l/adminmongo",
 			"ports": [
 			        "10012:1234/tcp"
 			],
