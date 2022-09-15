@@ -125,7 +125,7 @@
 			"name": "adminmongo",
 			"type": 1,
 			"title": "adminmongo",
-			"description": "mongodb web管理UI。容器镜像:https://hub.docker.com/r/mrvautin/adminmongo",
+			"description": "mongodb web管理UI。容器镜像:https://hub.docker.com/r/ykxvk8yl5l/adminmongo",
 			"categories": [
 				"tool"
 			],
