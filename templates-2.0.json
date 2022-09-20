@@ -1,6 +1,28 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "Siyuan",
+			"type": 1,
+			"title": "思源笔记",
+			"description": "思源笔记 Docker 镜像.容器镜像:https://hub.docker.com/r/b3log/siyuan",
+			"categories": [
+				"tool"
+			],
+			"platform": "linux",
+			"logo": "",
+			"image": "b3log/siyuan",
+			"ports": [
+			        "10014:6806/tcp"
+			],
+			"volumes": [{
+				"container": "/siyuan/workspace",
+				"bind": "/docker_data/siyuan",
+				"readonly": false
+			}],
+			"env": [
+			],
+			"network": "bridge"
+		},{
 			"name": "Pikpak-webdav",
 			"type": 1,
 			"title": "Pikpak-webdav",
