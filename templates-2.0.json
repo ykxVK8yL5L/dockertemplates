@@ -292,15 +292,15 @@
 			"name": "Subconverter",
 			"type": 1,
 			"title": "Subconverter",
-			"description": "不同订阅之前转换 详细请看https://hub.docker.com/r/tindy2013/subconverter",
+			"description": "不同订阅之前转换不同于原版这个支持多target由于是文件读写不建议公开使用，多个target之前用英文逗号分隔",
 			"categories": [
 				"tool"
 			],
 			"platform": "linux",
 			"logo": "https://ae01.alicdn.com/kf/Ua4c61369a9424a44a341ea4ae69defc7G.jpg",
-			"image": "tindy2013/subconverter:latest",
+			"image": "ykxvk8yl5l/axum-converter:latest",
 			"ports": [
-				"25500:25500/tcp"
+				"25500:3000/tcp"
 			],
 			"network": "bridge"
 		},
