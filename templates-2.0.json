@@ -292,7 +292,7 @@
 			"name": "Subconverter",
 			"type": 1,
 			"title": "Subconverter",
-			"description": "不同订阅之前转换不同于原版这个支持多target由于是文件读写不建议公开使用，多个target之前用英文逗号分隔",
+			"description": "不同订阅之间转换.不同于原版这个支持多target由于是文件读写不建议公开使用，多个target之间用英文逗号分隔",
 			"categories": [
 				"tool"
 			],
