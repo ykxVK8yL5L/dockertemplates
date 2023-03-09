@@ -621,7 +621,7 @@
 				"Tool"
 			],
 			"platform": "linux",
-			"logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-php-logo.png",
+			"logo": "https://i.328888.xyz/2023/03/09/ofhL5.png",
 			"image": "linuxserver/snapdrop",
 			"ports": [
 				"10101:80/tcp"
