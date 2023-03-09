@@ -612,9 +612,21 @@
 				"readonly": false
 			}]
 		},
-
-
-
+{
+			"name": "snapdrop",
+			"type": 1,
+			"title": "Snapdrop",
+			"description": "High performance web server",
+			"categories": [
+				"Tool"
+			],
+			"platform": "linux",
+			"logo": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-php-logo.png",
+			"image": "linuxserver/snapdrop",
+			"ports": [
+				"10101:80/tcp"
+			]
+		},
 		{
 			"type": 1,
 			"title": "Registry",
