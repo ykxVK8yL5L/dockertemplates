@@ -1,6 +1,28 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "Qinglong",
+			"type": 1,
+			"title": "青龙面板",
+			"description": "青龙面板 Docker 镜像.容器镜像:https://hub.docker.com/r/whyour/qinglong",
+			"categories": [
+				"tool"
+			],
+			"platform": "linux",
+			"logo": "https://z3.ax1x.com/2021/11/18/I7MpAe.png",
+			"image": "whyour/qinglong",
+			"ports": [
+			        "10015:5700/tcp"
+			],
+			"volumes": [{
+				"container": "/ql/data",
+				"bind": "/docker_data/qinglong",
+				"readonly": false
+			}],
+			"env": [
+			],
+			"network": "bridge"
+		},{
 			"name": "Siyuan",
 			"type": 1,
 			"title": "思源笔记",
