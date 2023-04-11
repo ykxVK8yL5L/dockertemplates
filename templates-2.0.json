@@ -1,6 +1,28 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "Memos",
+			"type": 1,
+			"title": "Memos",
+			"description": "A lightweight, self-hosted memo hub. Open Source and Free forever.容器镜像:https://hub.docker.com/r/neosmemo/memos",
+			"categories": [
+				"tool"
+			],
+			"platform": "linux",
+			"logo": "https://usememos.com/logo.webp",
+			"image": "neosmemo/memos",
+			"ports": [
+			        "10016:5230/tcp"
+			],
+			"volumes": [{
+				"container": "/var/opt/memos",
+				"bind": "/docker_data/memos",
+				"readonly": false
+			}],
+			"env": [
+			],
+			"network": "bridge"
+		},{
 			"name": "Qinglong",
 			"type": 1,
 			"title": "青龙面板",
