@@ -1,7 +1,7 @@
 {
 	"version": "2",
 	"templates": [{
-			"name": "Akist-encryot",
+			"name": "Aliyundrive-webdav",
 			"type": 1,
 			"title": "Memos",
 			"description": "阿里云盘 WebDAV 服务.容器镜像:https://hub.docker.com/r/messense/aliyundrive-webdav",
@@ -22,7 +22,7 @@
 				}],
 			"network": "bridge"
 		},{
-			"name": "Akist-encryot",
+			"name": "Alist-encrypt",
 			"type": 1,
 			"title": "Memos",
 			"description": "提供 webdav 的加解密功能.容器镜像:https://hub.docker.com/r/ykxvk8yl5l/alist-encrypt",
