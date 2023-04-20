@@ -3,7 +3,7 @@
 	"templates": [{
 			"name": "Aliyundrive-webdav",
 			"type": 1,
-			"title": "Memos",
+			"title": "Aliyundrive-webdav",
 			"description": "阿里云盘 WebDAV 服务.容器镜像:https://hub.docker.com/r/messense/aliyundrive-webdav",
 			"categories": [
 				"tool"
@@ -24,7 +24,7 @@
 		},{
 			"name": "Alist-encrypt",
 			"type": 1,
-			"title": "Memos",
+			"title": "Alist-encrypt",
 			"description": "提供 webdav 的加解密功能.容器镜像:https://hub.docker.com/r/ykxvk8yl5l/alist-encrypt",
 			"categories": [
 				"tool"
