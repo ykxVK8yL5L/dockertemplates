@@ -1,6 +1,44 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "Akist-encryot",
+			"type": 1,
+			"title": "Memos",
+			"description": "阿里云盘 WebDAV 服务.容器镜像:https://hub.docker.com/r/messense/aliyundrive-webdav",
+			"categories": [
+				"tool"
+			],
+			"platform": "linux",
+			"logo": "",
+			"image": "messense/aliyundrive-webdav",
+			"ports": [
+			        "10200:8080/tcp"
+			],
+			"env": [{
+					"name": "REFRESH_TOKEN",
+					"default": "",
+					"label": "REFRESH_TOKEN",
+					"description": "REFRESH_TOKEN"
+				}],
+			"network": "bridge"
+		},{
+			"name": "Akist-encryot",
+			"type": 1,
+			"title": "Memos",
+			"description": "提供 webdav 的加解密功能.容器镜像:https://hub.docker.com/r/ykxvk8yl5l/alist-encrypt",
+			"categories": [
+				"tool"
+			],
+			"platform": "linux",
+			"logo": "",
+			"image": "ykxvk8yl5l/alist-encrypt",
+			"ports": [
+			        "10017:5344/tcp"
+			],
+			"env": [
+			],
+			"network": "bridge"
+		},{
 			"name": "Memos",
 			"type": 1,
 			"title": "Memos",
