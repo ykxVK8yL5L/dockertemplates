@@ -122,6 +122,51 @@
 			],
 			"network": "bridge"
 		},{
+			"name": "AlistEncrypt",
+			"type": 1,
+			"title": "加密Alist",
+			"description": "Alist-encrypt集成alist.提供webdav的加解密功能.容器镜像:https://hub.docker.com/r/ykxvk8yl5l/alist-encrypt",
+			"categories": [
+				"tool"
+			],
+			"platform": "linux",
+			"logo": "",
+			"image": "ykxvk8yl5l/alist-encrypt:all",
+			"ports": [
+			        "10017:5344/tcp",
+			        "10100:5244/tcp"
+			],
+			"volumes": [{
+				"container": "/root/data",
+				"bind": "/docker_data/alist",
+				"readonly": false
+			},{
+				"container": "/root/conf",
+				"bind": "/docker_data/alist-encrypt",
+				"readonly": false
+			}],
+			"env": [
+			{
+					"name": "DAV_PASSWORD",
+					"default": "123456",
+					"label": "DAV_PASSWORD",
+					"description": "默认加密密码"
+				},
+				{
+					"name": "DAV_ENCNAME",
+					"default": "false",
+					"label": "DAV_ENCNAME",
+					"description": "是否加密文件名"
+				},
+				{
+					"name": "ALIST_ADMIN_PASSWORD",
+					"default": "admin",
+					"label": "ALIST_ADMIN_PASSWORD",
+					"description": "Alist默认管理密码"
+				}
+			],
+			"network": "bridge"
+		},{
 			"name": "Alist-encrypt",
 			"type": 1,
 			"title": "Alist-encrypt",
