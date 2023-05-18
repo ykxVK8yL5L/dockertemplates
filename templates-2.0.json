@@ -1,6 +1,27 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "Tmp-link-webdav",
+			"type": 1,
+			"title": "Tmp-link-webdav",
+			"description": "tmp.link WebDAV 服务.容器镜像:https://hub.docker.com/r/ykxvk8yl5l/tmp-link-webdav",
+			"categories": [
+				"tool"
+			],
+			"platform": "linux",
+			"logo": "",
+			"image": "ykxvk8yl5l/tmp-link-webdav",
+			"ports": [
+			        "10018:9867/tcp"
+			],
+			"env": [{
+					"name": "TMP_LINK_TOKEN",
+					"default": "",
+					"label": "TMP_LINK_TOKEN",
+					"description": "TMP_LINK_TOKEN"
+				}],
+			"network": "bridge"
+		},{
 			"name": "Aliyundrive-webdav",
 			"type": 1,
 			"title": "Aliyundrive-webdav",
