@@ -1,6 +1,27 @@
 {
 	"version": "2",
 	"templates": [{
+			"name": "stariver-webdav",
+			"type": 1,
+			"title": "stariver-webdav",
+			"description": "stariver WebDAV 服务.容器镜像:https://hub.docker.com/r/ykxvk8yl5l/stariver-webdav",
+			"categories": [
+				"tool"
+			],
+			"platform": "linux",
+			"logo": "",
+			"image": "ykxvk8yl5l/stariver-webdav",
+			"ports": [
+			        "10020:9867/tcp"
+			],
+			"env": [{
+					"name": "STARIVER_TOKEN",
+					"default": "",
+					"label": "STARIVER_TOKEN",
+					"description": "STARIVER_TOKEN"
+				}],
+			"network": "bridge"
+		},{
 			"name": "Tmp-link-webdav",
 			"type": 1,
 			"title": "Tmp-link-webdav",
