@@ -1,7 +1,7 @@
 {
 	"version": "2",
 	"templates": [{
-			"name": "FastWebDav",
+			"name": "FastWebDAV",
 			"type": 1,
 			"title": "fast-webdav",
 			"description": "fast WebDAV 服务.容器镜像:https://hub.docker.com/r/ykxvk8yl5l/fast-webdav",
