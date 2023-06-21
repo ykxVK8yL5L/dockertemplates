@@ -1,25 +1,26 @@
 {
 	"version": "2",
 	"templates": [{
-			"name": "stariver-webdav",
+			"name": "fast-webdav",
 			"type": 1,
-			"title": "stariver-webdav",
-			"description": "stariver WebDAV 服务.容器镜像:https://hub.docker.com/r/ykxvk8yl5l/stariver-webdav",
+			"title": "fast-webdav",
+			"description": "fast WebDAV 服务.容器镜像:https://hub.docker.com/r/ykxvk8yl5l/fast-webdav",
 			"categories": [
 				"tool"
 			],
 			"platform": "linux",
 			"logo": "",
-			"image": "ykxvk8yl5l/stariver-webdav",
+			"image": "ykxvk8yl5l/fast-webdav",
 			"ports": [
-			        "10020:9867/tcp"
+			        "10021:9867/tcp"
 			],
-			"env": [{
-					"name": "STARIVER_TOKEN",
-					"default": "",
-					"label": "STARIVER_TOKEN",
-					"description": "STARIVER_TOKEN"
-				}],
+			"volumes": [{
+				"container": "/root/configs",
+				"bind": "/docker_data/fastwebdav",
+				"readonly": false
+			}],
+			"env": [
+			],
 			"network": "bridge"
 		},{
 			"name": "Tmp-link-webdav",
